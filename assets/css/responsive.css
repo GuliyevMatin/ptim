@@ -396,4 +396,10 @@
     bottom: 8%;
   }
 
+  /* Partners */
+  .home-section-container-right{
+    width: 150px;
+    height: 120px;
+    margin: 10px auto;
+  }
 }

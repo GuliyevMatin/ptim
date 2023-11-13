@@ -55,22 +55,8 @@ Default Style
 @import url(./partials/menu.css);
 @import url(./partials/footer.css);
 @import url(./pages/home.css);
-/* @font-face {
-  font-family: GilroyLight;
-  src: url(../fonts/Gilroy/Gilroy-Light.ttf);
-}
-@font-face {
-  font-family: GilroyRegular;
-  src: url(../fonts/Gilroy/Gilroy-Regular.ttf);
-}
-@font-face {
-  font-family: GilroyMedium;
-  src: url(../fonts/Gilroy/Gilroy-Medium.ttf);
-}
-@font-face {
-  font-family: GilroyBold;
-  src: url(../fonts/Gilroy/Gilroy-Bold.ttf);
-} */
+@import url(./pages/about-us.css);
+@import url(./pages/news.css);
 
 
 :root {
@@ -357,10 +343,6 @@ Read More Btn Area Style*/
   margin-bottom: 60px;
 }
 
-
-
-
-
 /*====================================================
 OTHERS STYLE AREA
 ======================================================*/
@@ -536,81 +518,6 @@ Go Top Style*/
 }
 
 
-/* Search  */
-/* .my-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.my-search {
-  height: 30px;
-  display: flex;
-  cursor: pointer;
-  padding: 10px 20px;
-  background: #fff;
-  align-items: center;
-  transition: 0.8s all ease-in-out;
-}
-
-.my-search:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
-}
-
-.my-search:hover input {
-  width: 100%;
-}
-
-.my-search input {
-  width: 0;
-  outline: none;
-  border: none;
-  font-weight: 500;
-  transition: 0.5s all ease-in-out;
-  background: transparent;
-  color: gray;
-}
-
-.my-search button {
-  background: transparent;
-}
-
-.my-search button .fas {
-  color: #1daf;
-  font-size: 18px;
-}
-
-
-@media only screen and (max-width: 991px) {
-  .my-search {
-    height: 24px;
-    padding: 5px 10px;
-  }
-}
-
-
-@media only screen and (max-width: 767px) {
-  .my-search {
-    height: 20px;
-    padding: 5px 10px;
-  }
-
-  .my-search:hover input {
-    width: 150px;
-  }
-
-  .my-search input {
-    font-size: 13px;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .my-search:hover input {
-    width: 80px;
-  }
-} */
-
 /* Owl Nav and Owl dots */
 .owl-nav,
 .owl-dots {
@@ -621,18 +528,19 @@ Go Top Style*/
   padding: 30px 0;
 }
 
-.owl-nav{
+.owl-nav {
   position: absolute;
   top: -20%;
   right: 0;
 }
 
-.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
   width: 50px;
   height: 50px;
   fill: #FFF;
-backdrop-filter: blur(5px);
-background-color: #fff !important;
+  backdrop-filter: blur(5px);
+  background-color: #fff !important;
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -641,15 +549,17 @@ background-color: #fff !important;
   background-color: transparent;
   border: 1px solid var(--main-color-2);
   border-radius: 50%;
-margin-right: 10px;
+  margin-right: 10px;
 }
 
-.owl-theme .owl-dots .owl-dot span{
+.owl-theme .owl-dots .owl-dot span {
   margin: 0;
-margin-left: 2px;
-background-color: transparent;
+  margin-left: 2px;
+  background-color: transparent;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background-color: var(--main-color-2);
 }
 
@@ -675,4 +585,65 @@ background-color: transparent;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--main-color);
+}
+
+/* Pages css */
+.pages-header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pages-header-title {
+  color: var(--main-color);
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pages-header-body a,
+.pages-header-body span {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pages-header-body span {
+  color: var(--main-color-2);
+}
+
+.pages-body {
+  margin: 100px 0;
+}
+
+.pages-body .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.pages-body .pagination .page-item .page-link {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  border-radius: 5px;
+  border: 1px solid rgba(90, 91, 112, 0.60);
+  background: #FFF;
+  margin-right: 10px;
+}
+
+.pages-body .pagination .page-item .page-link:focus {
+  background-color: var(--main-color-2);
+  box-shadow: none;
+  color: var(--white-color);
 }

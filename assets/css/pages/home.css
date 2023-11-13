@@ -339,7 +339,7 @@
 }
 
 
-#home-partners .home-section-container-right{
+.home-section-container-right{
     width: 200px;
     height: 150px;
     background-position: center;
@@ -349,9 +349,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(228, 232, 249, 0.10);
+    background-color: #FFF;
+    box-shadow: 0px 8px 24px 0px rgba(107, 114, 128, 0.10);
 }
 
-#home-partners .home-section-container-right img{
+ .home-section-container-right img{
     width: 100px;
     height: 70px;
     object-fit: cover;
