@@ -1,0 +1,52 @@
+.report-container .activites-item {
+    width: 380px;
+    height: 320px;
+    margin-bottom: 25px;
+}
+
+.single-report-item {
+    width: 280px;
+    height: 70px;
+    border-radius: 5px;
+    background: #F1F3F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.single-report-item span {
+    margin-right: 10px;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1400px) {
+    .report-container .activites-item {
+        width: 360px;
+        height: 340px;
+    }
+
+    .report-container .activites-item-title {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .report-container .activites-item {
+        width: 100%;
+    }
+
+    .single-report-item {
+        width: 230px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .single-report-item {
+        width: 100%;
+    }
+}

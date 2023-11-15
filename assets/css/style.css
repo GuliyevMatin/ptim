@@ -57,6 +57,9 @@ Default Style
 @import url(./pages/home.css);
 @import url(./pages/about-us.css);
 @import url(./pages/news.css);
+@import url(./pages/report.css);
+@import url(./pages/documents.css);
+@import url(./pages/contact.css);
 
 
 :root {

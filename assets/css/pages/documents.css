@@ -1,0 +1,117 @@
+.documents {
+    width: 400px;
+    margin: 0 auto;
+    border: none;
+    background: #FFF;
+    height: 55px;
+    margin-bottom: 60px;
+}
+
+.documents .nav-item .nav-link {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+
+}
+
+.documents .nav-item .nav-link.active {
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    background: var(--Daark-orange-color, #C98E3F);
+    color: var(--white-color);
+}
+
+.document-item {
+    width: 385px;
+    height: 180px;
+    padding:  20px;
+    margin-bottom: 35px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #E8EAEC;
+    background: #FFF;
+}
+
+
+.document-item-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #FFE6E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.document-item-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.document-item-body h4 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.document-item-body p {
+    margin: 25px 0;
+    color: #5A5B70;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.document-item-body-footer a {
+    color: #0091FE;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.document-item-body-footer span {
+    color: #5A5B70;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1400px) {
+    .document-item{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .document-item-body p{
+        margin: 15px 0;
+    }
+    .document-item{
+        width: 320px;
+        height:170px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .documents{
+        width: 100%;
+    }
+    .document-item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .documents{
+        justify-content: center;
+    }
+    .document-item-body h4 {
+        font-size: 18px;
+    }
+}

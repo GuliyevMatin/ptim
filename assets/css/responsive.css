@@ -297,6 +297,13 @@
 }
 
 @media only screen and (max-width: 576px) {
+  /* Pages css */
+  .pages-header-title {
+    font-size: 22px;
+  }
+  .pages-header-body a, .pages-header-body span {
+    font-size: 12px;
+  }
 
   /* Header */
   .header-right {
