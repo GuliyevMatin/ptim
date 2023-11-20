@@ -19,11 +19,21 @@
     transition: var(--transition);
     display: block;
 }
+.my-menu-list .nav-item .nav-link.active{
+    color: var(--main-color-2);
+}
+.my-menu-list .nav-item .nav-link:hover{
+    color: var(--main-color-2);
+}
 
 .my-menu-list .nav-item .dropdown-menu {
     border-radius: 8px;
     border: 1px solid var(--Stroke, rgba(0, 0, 0, 0.10));
     background: var(--white-color);
+}
+
+.my-menu-list .nav-item .dropdown-menu .dropdown-item:hover{
+    color: var(--main-color-2);
 }
 
 
