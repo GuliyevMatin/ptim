@@ -13,14 +13,14 @@
     font-weight: 600;
     height: 100%;
     width: 100%;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     border: none;
 
 }
 
 .documents .nav-item .nav-link.active {
     border: none;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     background: var(--Daark-orange-color, #C98E3F);
     color: var(--white-color);
 }
@@ -40,11 +40,11 @@
 .document-item-icon {
     width: 70px;
     height: 70px;
-    background-color: #FFE6E2;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    border-radius: 10px;
 }
 
 .document-item-icon img {
